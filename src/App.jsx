@@ -1,15 +1,9 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { CssBaseline } from '@mui/material';
-import Routing from './routes/Routing';
+import React, { Suspense } from 'react';
+import { useRoutes } from 'react-router-dom';
+import routes from './routes';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <CssBaseline />
-      <Routing />
-    </BrowserRouter>
-  );
+  return <Suspense fallback="loading">{useRoutes(routes)}</Suspense>;
 }
 
 export default App;

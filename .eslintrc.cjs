@@ -35,6 +35,7 @@ module.exports = {
     },
   },
   rules: {
+    "import/order": "off",
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
     'react/prop-types': 'off',
@@ -42,16 +43,15 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'react/react-in-jsx-scope': 'off',
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "import/prefer-default-export": "off",
+    "react/no-array-index-key": "off",
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     'no-unused-expressions': [
       'error',
       { allowShortCircuit: true, allowTernary: true },
-    ],
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-      },
     ],
     'linebreak-style': 'off',
     'implicit-arrow-linebreak': 'off',

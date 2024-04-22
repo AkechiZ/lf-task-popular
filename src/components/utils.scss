@@ -1,0 +1,8 @@
+@mixin ellipsis {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+$primary-color: #61dafb;
