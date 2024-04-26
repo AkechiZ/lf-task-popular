@@ -95,11 +95,12 @@ export function PlayerForm(props) {
           <button
             className="delete"
             type="button"
+            style={{ backgroundColor: 'white' }}
             onClick={() => {
               props.onChange(undefined);
             }}
           >
-            <CloseOutlined style={{ color: '#f54949' }} />
+            <CloseOutlined style={{ color: 'orange' }} />
           </button>
           <img
             src={`https://github.com/${props.value}.png?size=100`}
