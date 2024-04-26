@@ -146,7 +146,6 @@ function Index() {
       dataSource = eval(`${language}Rank`);
     }
 
-    // setErrorOccurred(false);
     if (dataSource.items && dataSource.items.length > 0) {
       setProjects(() => ({
         items: dataSource.items,
@@ -165,13 +164,14 @@ function Index() {
   ]);
 
   const onLoadMore = () => {
-    if (loadingMore) {
-      return;
-    }
-    setLoadingMore(true);
+    // if (loadingMore) {
+    //   return;
+    // }
+    // setLoadingMore(true);
+    console.log('正在滚动', pageNumberRef.current + 1);
     pageNumberRef.current += 1;
     fetchData(true);
-    setLoadingMore(false);
+    // setLoadingMore(false);
   };
 
   return (

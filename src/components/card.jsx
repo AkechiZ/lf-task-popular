@@ -1,6 +1,7 @@
 import { formatNumber } from '@/utils';
 import './index.scss';
 import { DetailItem, DetailList } from './details';
+import LazyLoad from 'react-lazyload';
 // eslint-disable-next-line import/no-extraneous-dependencies,import/order
 import {
   ShareAltOutlined,
@@ -45,7 +46,11 @@ function Rank(props) {
 }
 
 function Avatar(props) {
-  return <img className="avatar" src={props.src} alt="头像" />;
+  return (
+    <LazyLoad>
+      <img className="avatar" src={props.src} alt="头像" />
+    </LazyLoad>
+  );
 }
 
 function ProjectName(props) {

@@ -7,6 +7,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
     'eslint-config-prettier',
+    "plugin:prettier/recommended"
   ],
   plugins: ['react', 'react-hooks', 'prettier', 'jsx-a11y', 'import'],
   settings: {
