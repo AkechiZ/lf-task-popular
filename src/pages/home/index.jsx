@@ -211,6 +211,7 @@ function Index() {
         )}
         {!loading && !errorOccurred && (
           <InfiniteScroll
+            style={{ overflow: 'hidden' }}
             dataLength={projects.items.length}
             hasMore
             loader={<Loader key={0} />}
